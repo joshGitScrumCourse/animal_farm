@@ -103,6 +103,40 @@
 		},
 	"Species":
 		{
+			"name":	"Ailuropoda melanoleuca",
+			"classification": "Mammal",
+			"subspecies: {
+					intro: "Two subspecies of giant panda have been recognized on the basis of distinct cranial measurements, colour patterns, and population genetics.",
+					list: [
+						{
+						"id": 1,
+
+						"text": "The nominate subspecies Ailuropoda melanoleuca consists of most extant populations of panda. These animals are principally found in Sichuan and display the typical stark black and white contrasting colors."
+						},
+						{
+						"id": 2,
+
+						"text": "The Qinling panda, A. m. qinlingensis is restricted to the Qinling Mountains in Shaanxi at elevations of 1,300–3,000 m. The typical black and white pattern of Sichuan giant pandas is replaced with a dark brown versus light brown pattern. The skull of Qinling panda is smaller than its relatives, and it has larger molars."
+						}
+					     ],
+					"Other": [
+						{
+						"id": 1,
+
+						"trivia": "Molecular studies indicate the giant panda is a true bear, part of the family Ursidae."
+						},
+						{
+						"id": 2,
+
+						"trivia": "The giant panda has been referred to as a living fossil."
+						},
+						{
+						"id": 3,
+
+						"trivia": "A detailed study of the giant panda's genetic history from 2012 confirms that the separation of the Qinling population occurred about 300,000 years ago."
+						}
+					     ]
+				}
 		}
   }
 
