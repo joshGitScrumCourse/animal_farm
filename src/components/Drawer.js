@@ -8,7 +8,7 @@ const styles={  textAlign:'left',
 position:'fixed',
 left:0,top:0,
 div: {
-  'padding-top':'9vh',
+  paddingTop:'9vh',
 }
 }
 

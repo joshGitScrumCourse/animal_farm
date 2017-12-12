@@ -2,14 +2,15 @@ import React from 'react';
 import Paper from 'material-ui/Paper';
 
 const styles = {
-    position:'absolute',
-    padding:'5%',
-    top:'5vh',
+    display:"flex",
+    alignItems:"center",
+    justifyContent:"center",
+    height: "89vh",
     paper : {
-        padding:'5%',
-        'padding-top':'1%',
+        height: '74vh',
+        width:'90vw',
     }
-}
+};
 
 export default class appBar extends React.Component {
     constructor(props) {

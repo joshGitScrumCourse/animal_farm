@@ -1,11 +1,12 @@
 import React from 'react';
 import AppBar from 'material-ui/AppBar';
 import Drawer from './Drawer';
+import LightbulbIcon from 'material-ui/svg-icons/action/lightbulb-outline';
+import IconButton from 'material-ui/IconButton';
 
 const styles={  textAlign:'left',
-                position:'fixed',
                 left:0,top:0
-            }
+            };
 
 
 export default class appBar extends React.Component {
@@ -32,6 +33,8 @@ export default class appBar extends React.Component {
                     title="The Panda" 
                     style={styles}
                     onLeftIconButtonClick={this.toggleAppDrawer}
+                    iconElementRight={<IconButton><LightbulbIcon /></IconButton>}
+                    onRightIconButtonClick={this.props.changeThemeCallback}
                 />
             <Drawer
             isOpen={this.state.open}

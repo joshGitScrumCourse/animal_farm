@@ -1,20 +1,47 @@
 import React, { Component } from 'react';
 import PageStructure from '../PageStructure';
-import Appbar from '../AppBar';
+import RefreshIndicator from 'material-ui/RefreshIndicator';
+import Carousel from '../Carousel';
 
-const homeContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+class Pictures extends Component {
 
-class Home extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            pictures:[],
+            loading: true
+        }
+    }
+
+    componentDidMount(){
+        fetch('http://localhost:4000/Panda')
+            .then(results => {
+                return results.json();
+            }).then(data => {
+            this.setState({pictures:data, loading:false});
+        }).catch( e => {console.log(e); this.setState({loading:false})});
+    }
+
    render() {
+
+       const loading = (<RefreshIndicator
+           size={100} left={-50} top={-50} status="loading" style={{marginLeft: '50vw', marginTop: '50vh', display: 'inline-block',
+           position: 'relative'}}
+       />);
+       let content = loading;
+       if(!this.state.loading){
+           content =  (<div><Carousel images={this.state.pictures} />  <div style={{display:"flex", justifyContent: "center", alignItems:"center"}}> Please upload images!</div></div>);
+
+       }
+
       return (
         <div className="App">
-        <Appbar/>
         <PageStructure
           title='The Panda Photos'
-          content={'photo here'}/>
+          content={content}/>
       </div>
       );
    }
 }
-export default Home;
+export default Pictures;
 
