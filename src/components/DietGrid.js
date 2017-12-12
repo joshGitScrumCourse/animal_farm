@@ -3,7 +3,8 @@
  */
 import React, { Component } from 'react';
 import GridList, { GridTile } from 'material-ui/GridList';
-
+import LinkIcon from 'material-ui/svg-icons/content/link';
+import IconButton from 'material-ui/IconButton';
 import Subheader from 'material-ui/Subheader';
 
 class DietGrid extends Component {
@@ -14,6 +15,7 @@ class DietGrid extends Component {
                 key={foodItem.id}
                 title={foodItem.name}
                 titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
+                actionIcon={<IconButton href={foodItem.url}><LinkIcon color="rgb(0, 188, 212)" /></IconButton>}
             >
                 <img src={foodItem.image} />
             </GridTile>
@@ -32,7 +34,6 @@ class DietGrid extends Component {
                     flexWrap: 'nowrap',
                     overflowX: 'auto'}}
             >
-                <Subheader>Food</Subheader>
                 { this.props.food.length > 0 ? this.props.food.map( f => this.mapFoodToGridTile(f) ) : [empty]}
             </GridList>
             </div>

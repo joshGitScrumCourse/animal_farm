@@ -19,11 +19,12 @@ export default class DietInformation extends Component {
     }
 
     componentDidMount(){
-        fetch('http://localhost:4000/Panda/Diet/Resources')
+        fetch('http://localhost:4000/Panda')
             .then(results => {
                 return results.json();
             }).then(data => {
-            this.setState({food:data, loading:false});
+                console.log(data);
+            this.setState({food:data.Diet.Resources, loading:false});
         }).catch( e => {console.log(e); this.setState({loading:false})});
     }
 

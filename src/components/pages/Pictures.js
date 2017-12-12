@@ -14,11 +14,12 @@ class Pictures extends Component {
     }
 
     componentDidMount(){
-        fetch('http://localhost:4000/Panda/Images')
+        fetch('http://localhost:4000/Panda')
             .then(results => {
                 return results.json();
             }).then(data => {
-            this.setState({pictures:data, loading:false});
+            console.log(data);
+            this.setState({pictures:data.Images, loading:false});
         }).catch( e => {console.log(e); this.setState({loading:false})});
     }
 
