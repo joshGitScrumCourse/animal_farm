@@ -1,28 +1,109 @@
 {
-  "Panda": [
-    {
-      "id": 1,
-      "url": "https://media4.s-nbcnews.com/j/newscms/2016_36/1685951/ss-160826-twip-05_8cf6d4cb83758449fd400c7c3d71aa1f.nbcnews-ux-2880-1000.jpg",
+  "Panda":
+ {
+    
+	"Images":
+	[
+	{
+     "id": 1,
+
+	      "url": "https://media4.s-nbcnews.com/j/newscms/2016_36/1685951/ss-160826-twip-05_8cf6d4cb83758449fd400c7c3d71aa1f.nbcnews-ux-2880-1000.jpg",
+	
       "caption": "One-year-old female giant panda cub Nuan Nuan at the National Zoo in Kuala Lumpur on Aug. 23",
+	
       "text": ""
-    },
-    {
-      "id": 2,
+
+	},
+	{
+     "id": 2,
+	
       "url": "https://3sn4dm1qd6i72l8a4r2ig7fl-wpengine.netdna-ssl.com/wp-content/uploads/2016/11/panda_lunlun_ZA_8142-b.jpg",
-      "caption": "Giant Panda Lun Lun eating bamboo",
-      "text": ""
-    },
-    {
-      "id": 3,
+
+	      "caption": "Giant Panda Lun Lun eating bamboo",
+
+	      "text": ""
+    
+	},
+
+	{
+     "id": 3,
+	
       "url": "https://c402277.ssl.cf1.rackcdn.com/photos/11551/images/hero_full/Bernard_de_wetter_wwf_canon_113974.jpg?1462218465",
+	
       "caption": "Giant Panda in Tree",
+	
       "text": ""
-    },
-    {
-      "id": 4,
+	},
+
+	{
+     "id": 4,
+	
       "url": "http://assets.worldwildlife.org/photos/479/images/story_full_width/giant-panda-shutterstock_86500690.jpg?1345572346",
+	
       "caption": "Giant Panda no longer endangered",
+	
       "text": ""
     }
-  ]
+	],
+	"Diet":
+		{
+			"What": "99% Bamboo - Arrow bamboo, black bamboo and water bamboo. Eat almost entirely the leaves, stems and shoots. In spring and summer, they like eating different kind of shoots. In autumn, they enjoy the leaves of bamboo. In winter, their main diet is shoots.",
+			"Frequency": "Spend over 10hours a day because they have a shorter gut",
+			"Quantity": "Bamboo contains very little nutrition so they must eat 20 - 40 pounds per day to meet their energy needs and nutrients.",
+			"Resources":
+			[
+				{
+				"id": 1,
+
+				"name": "Arrow Bamboo",
+				"image": "https://apps.rhs.org.uk/plantselectorimages/detail/WSY0035384_3395.jpg",
+		 	        "url": "https://www.rhs.org.uk/Plants/14080/Pseudosasa-japonica/Details"
+				},
+				{
+				"id": 2,
+
+				"name": "Black Bamboo",
+				"image": "https://apps.rhs.org.uk/plantselectorimages/detail/WSY0035391_3390.jpg",
+		 	        "url": "https://www.rhs.org.uk/plants/details?plantid=1451"
+				}
+			]
+		},
+	"Mating": 
+		{
+			"Gestation": "95-160 days",
+			"Offspring": "Although females may give birth to two young, usually only one survives.",
+			"Parenting": "Giant panda cubs may stay with their mothers for up to three years before striking out on their own.",
+			"Other": [
+				{
+				"id": 1,
+
+				"trivia": "Giant pandas reach breeding maturity between four and eight years of age."
+				},
+				{
+				"id": 2,
+
+				"trivia": "They may be reproductive until about age 20."
+				},
+				{
+				"id": 3,
+
+				"trivia": "Female pandas ovulate only once a year, in the spring."
+				},
+				{
+				"id": 4,
+
+				"trivia": "A short period of two to three days around ovulation is the only time she is able to conceive."
+				},
+				{
+				"id": 5,
+
+				"trivia": "Calls and scents draw males and females to each other."
+				}
+				]
+		},
+	"Species":
+		{
+		}
+  }
+
 }
