@@ -25,12 +25,12 @@ class Pictures extends Component {
    render() {
 
        const loading = (<RefreshIndicator
-           size={100} left={-50} top={-50} status="loading" style={{marginLeft: '50vw', marginTop: '50vh', display: 'inline-block',
+           size={100} left={0} top={-50} status="loading" style={{marginLeft: '0', marginTop: '25vh', display: 'inline-block',
            position: 'relative'}}
        />);
        let content = loading;
        if(!this.state.loading){
-           content =  (<div><Carousel images={this.state.pictures} />  <div style={{display:"flex", justifyContent: "center", alignItems:"center"}}> Please upload images!</div></div>);
+           content =  (<div><Carousel images={this.state.pictures} />  <div style={{display:"flex", justifyContent: "center", alignItems:"center"}}> Please send additional images to: test@example.com!</div></div>);
 
        }
 
