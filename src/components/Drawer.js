@@ -3,6 +3,7 @@ import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import AppBar from 'material-ui/AppBar';
 import {Link} from 'react-router-dom';
+import Subheader from 'material-ui/Subheader';
 
 const styles={  textAlign:'left',
 position:'fixed',
@@ -31,8 +32,10 @@ export default class AppDrawer extends React.Component {
           onLeftIconButtonClick={this.props.toggleDrawer}
         />
         <div style={styles.div}>
-          <MenuItem containerElement={<Link to="/" />}> Home</MenuItem>
-          <MenuItem containerElement={<Link to="/pictures" />}> Pictures </MenuItem>
+            <Subheader>Navigation</Subheader>
+            <MenuItem containerElement={<Link to="/" />}> Home</MenuItem>
+            <MenuItem containerElement={<Link to="/pictures" />}> Pictures </MenuItem>
+            <MenuItem containerElement={<Link to="/dietinfo" />}> Diet Information </MenuItem>
         </div>  
         </Drawer>
       </div>

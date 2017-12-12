@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Home from './components/pages/Home';
 import Pictures from './components/pages/Pictures';
 import NotFound from './components/pages/NotFound';
+import DietInformation from './components/pages/DietInformation';
 
 import Appbar from './components/AppBar';
 import './App.css';
@@ -40,6 +41,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/pictures' component={Pictures} />
+            <Route exact path='/dietinfo' component={DietInformation} />
             <Route component={NotFound}/>
           </Switch>
           </div>

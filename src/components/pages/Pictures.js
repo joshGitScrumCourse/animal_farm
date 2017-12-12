@@ -14,7 +14,7 @@ class Pictures extends Component {
     }
 
     componentDidMount(){
-        fetch('http://localhost:4000/Panda')
+        fetch('http://localhost:4000/Panda/Images')
             .then(results => {
                 return results.json();
             }).then(data => {
