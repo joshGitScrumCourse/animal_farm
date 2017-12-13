@@ -10,7 +10,6 @@ import {
     TableBody,
     TableRow,
     TableRowColumn,
-    TableHeaderColumn,
 } from 'material-ui/Table';
 
 class MatingReproduction extends Component {
