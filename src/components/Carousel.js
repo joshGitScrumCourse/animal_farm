@@ -22,7 +22,7 @@ export default class Carousel extends Component {
         let content = <SadPanda text="Uh Oh! Panda's a bit lonely (No Images Found)"/>;
 
         if (this.props.images.length > 0) {
-            content = <ReactCarousel showThumbs={false} dynamicHeight={true} >
+            content = <ReactCarousel showThumbs={false} dynamicHeight={true}>
                 { this.props.images.map(pic => this.mapImagesToSlides(pic)) }
             </ReactCarousel>;
         }

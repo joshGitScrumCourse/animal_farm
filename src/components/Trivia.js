@@ -12,7 +12,7 @@ class Trivia extends Component {
         return(
             <GridTile key={id}>
               <Card containerStyle={{whiteSpace:"normal",
-                  display:"inline-block", width:"30vh", height:"21vh", backgroundColor:grey200}}>
+                  display:"inline-block", width:"30vh", backgroundColor:grey200}}>
               <CardText color="black">
                   {trivia}
               </CardText>
@@ -32,7 +32,8 @@ class Trivia extends Component {
                           display: 'flex',
                           flexWrap: 'nowrap',
                           overflowX: 'auto',
-                      width:'80vw'}}
+                      width:'80vw',
+                      }}
             >
                 {this.props.items.map( item => this.mapTriviaCards(item))}
             </GridList>

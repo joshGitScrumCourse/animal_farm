@@ -31,7 +31,7 @@ class MatingReproduction extends Component {
   }
 
   render() {
-      const matingInfo = this.state.matingInfo;
+      const matingInfo = this.state.habitatInfo;
       let matingContent = <LoadingAnimation />;
 
       if(!this.state.loading && matingInfo) {
@@ -65,7 +65,7 @@ class MatingReproduction extends Component {
                   <Trivia items={matingInfo.Other}/>
               </div>
           );
-      }else if(!this.state.loading && !this.state.matingInfo){
+      }else if(!this.state.loading && !this.state.habitatInfo){
           matingContent = <SadPanda text="Uh Oh! Panda doesn't have a mate (Can't Get Mating Information)" />;
       }
       return (
