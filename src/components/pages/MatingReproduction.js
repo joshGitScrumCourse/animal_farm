@@ -62,7 +62,7 @@ class MatingReproduction extends Component {
                       </TableRow>
                   </TableBody>
               </Table>
-                  <Trivia items={matingInfo.Other}/>
+                  <Trivia title={'Trivia'} items={matingInfo.Other}/>
               </div>
           );
       }else if(!this.state.loading && !matingInfo){

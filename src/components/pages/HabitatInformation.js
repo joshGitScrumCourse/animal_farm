@@ -74,7 +74,7 @@ class HabitatInformation extends Component {
                             </TableRow>
                         </TableBody>
                     </Table>
-                    <Trivia items={habitatInfo.Other}/>
+                    <Trivia title={"Trivia"} items={habitatInfo.Other}/>
                 </div>
             );
         }else if(!this.state.loading && !habitatInfo){

@@ -23,7 +23,8 @@ class Trivia extends Component {
     render(){
         return(
             <div>
-                <h4>Trivia</h4>
+                <h4>{this.props.title}</h4>
+                <div>{this.props.subtitle}</div><br/>
             <GridList
                 padding={4}
                 cellHeight={"auto"}

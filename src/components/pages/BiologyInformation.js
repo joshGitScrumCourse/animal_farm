@@ -84,7 +84,7 @@ class BiologyInformation extends Component {
                             </TableRow>
                         </TableBody>
                     </Table>
-                    <Trivia items={biologyInfo.Other}/>
+                    <Trivia title={"Trivia"} items={biologyInfo.Other}/>
                 </div>
             );
         }else if(!this.state.loading && !this.state.biologyInfo){

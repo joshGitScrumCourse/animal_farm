@@ -39,6 +39,7 @@ export default class AppDrawer extends React.Component {
             <MenuItem containerElement={<Link to="/mating" />}onClick={this.props.toggleDrawer}> Mating and Reproduction </MenuItem>
             <MenuItem containerElement={<Link to="/habitat" />}onClick={this.props.toggleDrawer}> Animal Habitat Information </MenuItem>
             <MenuItem containerElement={<Link to="/biology" />}onClick={this.props.toggleDrawer}> Anatomy and Biology </MenuItem>
+            <MenuItem containerElement={<Link to="/scientific" />}onClick={this.props.toggleDrawer}> Scientific Info </MenuItem>
         </div>  
         </Drawer>
       </div>
