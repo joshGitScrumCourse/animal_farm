@@ -93,7 +93,7 @@ class MatingReproduction extends Component {
       return (
         <div className="App">
         <PageStructure
-          title='Mating and Reproduction'
+          title='Scientific Information'
           content={scienceContent}/>
       </div>
       );
