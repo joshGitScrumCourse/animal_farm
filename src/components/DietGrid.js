@@ -5,7 +5,6 @@ import React, { Component } from 'react';
 import GridList, { GridTile } from 'material-ui/GridList';
 import LinkIcon from 'material-ui/svg-icons/content/link';
 import IconButton from 'material-ui/IconButton';
-import Subheader from 'material-ui/Subheader';
 
 class DietGrid extends Component {
 
@@ -17,7 +16,7 @@ class DietGrid extends Component {
                 titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
                 actionIcon={<IconButton href={foodItem.url}><LinkIcon color="rgb(0, 188, 212)" /></IconButton>}
             >
-                <img src={foodItem.image} />
+                <img alt="" src={foodItem.image} />
             </GridTile>
         );
     }

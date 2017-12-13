@@ -12,7 +12,7 @@ import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 class App extends Component {
@@ -35,7 +35,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <MuiThemeProvider muiTheme={getMuiTheme(this.state.themes[this.state.currentTheme % this.state.themes])}>
+        <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
           <div>
           <Appbar changeThemeCallback={this.changeTheme}/>
           <Switch>

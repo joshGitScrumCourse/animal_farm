@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PageStructure from '../PageStructure';
-import RefreshIndicator from 'material-ui/RefreshIndicator';
 import Carousel from '../Carousel';
+import LoadingAnimation from '../LoadingAnimation';
 
 class Pictures extends Component {
 
@@ -25,13 +25,10 @@ class Pictures extends Component {
 
    render() {
 
-       const loading = (<RefreshIndicator
-           size={100} left={0} top={-50} status="loading" style={{marginLeft: '0', marginTop: '25vh', display: 'inline-block',
-           position: 'relative'}}
-       />);
+       const loading =  <LoadingAnimation />;
        let content = loading;
        if(!this.state.loading){
-           content =  (<div><Carousel images={this.state.pictures} />  <div style={{display:"flex", justifyContent: "center", alignItems:"center"}}> Please send additional images to: test@example.com!</div></div>);
+           content =  (<div><Carousel images={this.state.pictures} />  <div style={{display:"flex", justifyContent: "center", alignItems:"center", marginTop:'0.25em'}}> Please send additional images to: test@example.com!</div></div>);
 
        }
 

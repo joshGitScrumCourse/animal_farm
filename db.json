@@ -105,9 +105,9 @@
 		{
 			"name":	"Ailuropoda melanoleuca",
 			"classification": "Mammal",
-			"subspecies: {
-					intro: "Two subspecies of giant panda have been recognized on the basis of distinct cranial measurements, colour patterns, and population genetics.",
-					list: [
+			"subspecies": {
+					"intro": "Two subspecies of giant panda have been recognized on the basis of distinct cranial measurements, colour patterns, and population genetics.",
+					"list": [
 						{
 						"id": 1,
 

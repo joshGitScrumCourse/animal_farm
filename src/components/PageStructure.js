@@ -5,10 +5,11 @@ const styles = {
     display:"flex",
     alignItems:"center",
     justifyContent:"center",
-    height: "89vh",
+    margin:'1em',
     paper : {
-        height: '74vh',
         width:'90vw',
+        paddingTop:'0.2em',
+        paddingBottom:'0.5em'
     }
 };
 

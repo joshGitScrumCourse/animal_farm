@@ -18,7 +18,7 @@ class Home extends Component {
             <p><br/>But pandas also play a crucial role in Chinas bamboo forests by spreading seeds and helping the vegetation to grow. So by saving pandas, we will also be saving so much more. We will be helping to protect not only these unique forests but also the wealth of species that live in them. Want to find out more? Navigate through each page for more information.</p>
           </div>
           <div>
-            <img style={{height:'38vh', padding:'1vh'}} src="https://i.pinimg.com/originals/19/98/0f/19980f5db03c9fac79cbf0ed8aa06bac.jpg" alt="panda picture"/>
+            <img style={{height:'38vh', padding:'1vh'}} src="https://i.pinimg.com/originals/19/98/0f/19980f5db03c9fac79cbf0ed8aa06bac.jpg" alt="panda on a rocking toy"/>
           </div>
       </div>
     );

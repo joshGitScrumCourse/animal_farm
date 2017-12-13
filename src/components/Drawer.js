@@ -9,9 +9,9 @@ const styles={  textAlign:'left',
 position:'fixed',
 left:0,top:0,
 div: {
-  paddingTop:'9vh',
+  paddingTop:'10vh',
 }
-}
+};
 
 export default class AppDrawer extends React.Component {
 
