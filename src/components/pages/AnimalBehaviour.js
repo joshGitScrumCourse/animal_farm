@@ -74,7 +74,7 @@ class MatingReproduction extends Component {
       return (
         <div className="App">
         <PageStructure
-          title='Mating and Reproduction'
+          title='Animal Behaviour'
           content={behaviourContent}/>
       </div>
       );
