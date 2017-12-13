@@ -7,6 +7,8 @@ import MatingReproduction from './components/pages/MatingReproduction';
 import HabitatInformation from './components/pages/HabitatInformation';
 import BiologyInformation from './components/pages/BiologyInformation';
 import Scientific from './components/pages/Scientific';
+import AnimalBehaviour from './components/pages/AnimalBehaviour';
+
 import Appbar from './components/AppBar';
 import './App.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -57,6 +59,8 @@ class App extends Component {
             <Route exact path='/habitat' component={HabitatInformation} />
             <Route exact path='/biology' component={BiologyInformation} />
             <Route exact path='/scientific' component={Scientific} />
+            <Route exact path='/behaviour' component={AnimalBehaviour} />AnimalBehaviour
+            
             <Route component={NotFound}/>
           </Switch>
           </div>
