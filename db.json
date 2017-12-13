@@ -184,6 +184,112 @@
                "trivia":"The giant pandas can stretch their paws and open their mouths wide like cats to make themselves more comfortable. They can also shake water off themselves like dogs after a heavy rain."
             }
          ]
+      },
+      "PopCulture":{  
+         "Movies":[  
+            {  
+               "id":1,
+               "year":"1995",
+               "title":"The Amazing Panda Adventure",
+               "url":"https://www.youtube.com/watch?v=Uwnm9QAwhzE"
+            },
+            {  
+               "id":2,
+               "year":"2001",
+               "title":"China: The Panda Adventure",
+               "url":"https://www.youtube.com/watch?v=qMF7MepbqO0"
+            },
+            {  
+               "id":3,
+               "year":"2008",
+               "title":"Kung Fu Panda",
+               "url":"https://www.youtube.com/watch?v=PXi3Mv6KMzY"
+            },
+            {  
+               "id":4,
+               "year":"2011",
+               "title":"Kung Fu Panda 2",
+               "url":"https://www.youtube.com/watch?v=YIW5oo-8NYw"
+            },
+            {  
+               "id":5,
+               "year":"2014",
+               "title":"Pandas: The Journey Home",
+               "url":" https://www.youtube.com/watch?v=Mxmg6KHGNNc"
+            },
+            {  
+               "id":6,
+               "year":"2016",
+               "title":"Kung Fu Panda 3",
+               "url":"https://www.youtube.com/watch?v=10r9ozshGVE"
+            }
+         ],
+         "Books":[  
+            {  
+               "id":1,
+               "year":"2002",
+               "title":"Smithsonian Book of Giant Pandas",
+               "author":"Susan Lumpkin, John Seidensticker"
+            },
+            {  
+               "id":2,
+               "year":"2004",
+               "title":"Giant Pandas: Biology and Conservation 1st ed",
+               "author":"Donald Lindburg"
+            },
+            {  
+               "id":3,
+               "year":"2009",
+               "title":"Panda Kindergarten",
+               "author":"Joanne Ryder"
+            },
+            {  
+               "id":4,
+               "year":"2010",
+               "title":"The Way of the Panda: The Curious History of China's Political Animal",
+               "author":"Henry Nicolls"
+            },
+            {  
+               "id":5,
+               "year":"2016",
+               "title":"Panda Rescue: All about Pandas and How to Save Them",
+               "author":"Kitson Jazynka"
+            }
+         ],
+         "Documentaries":[  
+            {  
+               "id":1,
+               "title":"Best Documentary 2016 National Geographic Life Of Panda",
+               "url":"https://www.youtube.com/watch?v=lV-QxITDqtk"
+            },
+            {  
+               "id":2,
+               "title":"Giant Pandas, The Last Refuge",
+               "url":"https://www.youtube.com/watch?v=5EP1T5VpaT4"
+            },
+            {  
+               "id":3,
+               "title":"Life of Giant Pandas",
+               "url":"https://www.youtube.com/watch?v=-mQNbQTixdc"
+            }
+         ],
+         "Articles":[  
+            {  
+               "id":1,
+               "title":"Giant Panda | National Geographic",
+               "url":"https://www.nationalgeographic.com/animals/mammals/g/giant-panda/"
+            },
+            {  
+               "id":2,
+               "title":"Giant panda habitats smaller now than when animals were on endangered list",
+               "url":"http://www.abc.net.au/news/science/2017-09-26/pandas-under-threat-despite-endangered-listing-removal/8968540"
+            },
+            {  
+               "id":3,
+               "title":"China to create 'giant' giant panda reserve to boost wild population",
+               "url":"https://www.theguardian.com/world/2017/mar/31/china-to-create-giant-giant-panda-reserve-to-boost-wild-population"
+            }
+         ]
       }
    }
 }
