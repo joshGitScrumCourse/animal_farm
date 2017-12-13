@@ -21,21 +21,29 @@ class App extends Component {
     super(props);
 
     this.state = {
-      themes:[lightBaseTheme,darkBaseTheme],
-      currentTheme:0
+      currentTheme:"dark",
+        theme: getMuiTheme(darkBaseTheme)
     };
     this.changeTheme = this.changeTheme.bind(this);
   }
 
   changeTheme(){
-    this.setState({currentTheme: this.state.currentTheme+1});
-    console.log(this.state.currentTheme);
+    switch(this.state.currentTheme){
+        case "light":
+          this.setState({theme: getMuiTheme(darkBaseTheme), currentTheme:"dark" });
+            break;
+        case "dark":
+            this.setState({theme: getMuiTheme(lightBaseTheme), currentTheme:"light" });
+            break;
+        default:
+            this.setState({theme: getMuiTheme(darkBaseTheme), currentTheme:"dark" });
+    }
   }
 
   render() {
     return (
       <Router>
-        <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
+        <MuiThemeProvider muiTheme={this.state.theme}>
           <div>
           <Appbar changeThemeCallback={this.changeTheme}/>
           <Switch>

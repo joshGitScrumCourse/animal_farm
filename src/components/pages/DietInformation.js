@@ -19,7 +19,7 @@ export default class DietInformation extends Component {
     constructor(props){
         super(props);
         this.state = {
-            dietInfo: {},
+            dietInfo: null,
             loading: true
         }
     }

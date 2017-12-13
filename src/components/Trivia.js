@@ -5,14 +5,14 @@ import React, { Component } from 'react';
 
 import GridList, {GridTile} from 'material-ui/GridList';
 import {Card, CardText} from 'material-ui/Card';
-
+import { grey200 } from 'material-ui/styles/colors';
 class Trivia extends Component {
 
     mapTriviaCards({id, trivia}){
         return(
             <GridTile>
               <Card key={id} containerStyle={{whiteSpace:"normal",
-                  display:"inline-block", width:"25vh", height:"21vh", backgroundColor:"white"}}>
+                  display:"inline-block", width:"25vh", height:"21vh", backgroundColor:grey200}}>
               <CardText color="black">
                   {trivia}
               </CardText>

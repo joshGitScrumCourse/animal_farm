@@ -16,7 +16,7 @@ class MatingReproduction extends Component {
   constructor(props){
     super(props);
     this.state = {
-        matingInfo:{},
+        matingInfo:null,
         loading: true
     }
 }
