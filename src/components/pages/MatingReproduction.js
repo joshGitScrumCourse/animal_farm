@@ -26,7 +26,6 @@ class MatingReproduction extends Component {
         .then(results => {
             return results.json();
         }).then(data => {
-        console.log(data.Mating);
         this.setState({matingInfo:data.Mating, loading:false});
     }).catch( err => {console.log(err); this.setState({loading:false})});
   }

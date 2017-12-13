@@ -10,9 +10,9 @@ class Trivia extends Component {
 
     mapTriviaCards({id, trivia}){
         return(
-            <GridTile>
-              <Card key={id} containerStyle={{whiteSpace:"normal",
-                  display:"inline-block", width:"25vh", height:"21vh", backgroundColor:grey200}}>
+            <GridTile key={id}>
+              <Card containerStyle={{whiteSpace:"normal",
+                  display:"inline-block", width:"30vh", height:"21vh", backgroundColor:grey200}}>
               <CardText color="black">
                   {trivia}
               </CardText>
@@ -26,6 +26,7 @@ class Trivia extends Component {
             <div>
                 <h4>Trivia</h4>
             <GridList
+                padding={4}
                 cellHeight={"auto"}
                       style={{
                           display: 'flex',

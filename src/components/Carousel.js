@@ -9,11 +9,10 @@ import 'react-responsive-carousel/lib/styles/main.css';
 export default class Carousel extends Component {
 
     mapImagesToSlides({url, caption, text, id}) {
-        console.log(id, url);
         return (
             <div key={id}>
                 <img src={url} style={{height: "50vh", width: "auto"}} alt=""/>
-                <p className="legend">{caption}</p>
+                <p className="legend">{caption}{"\n"}{text}</p>
             </div>
         );
     }
@@ -23,7 +22,7 @@ export default class Carousel extends Component {
         let content = <SadPanda text="Uh Oh! Panda's a bit lonely (No Images Found)"/>;
 
         if (this.props.images.length > 0) {
-            content = <ReactCarousel showThumbs={false} dynamicHeight={true}>
+            content = <ReactCarousel showThumbs={false} dynamicHeight={true} >
                 { this.props.images.map(pic => this.mapImagesToSlides(pic)) }
             </ReactCarousel>;
         }

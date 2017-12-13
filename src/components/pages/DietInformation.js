@@ -29,7 +29,6 @@ export default class DietInformation extends Component {
             .then(results => {
                 return results.json();
             }).then(data => {
-                console.log(data);
             this.setState({dietInfo:data.Diet, loading:false});
         }).catch( e => {console.log(e); this.setState({loading:false})});
     }

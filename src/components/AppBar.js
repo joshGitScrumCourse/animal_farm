@@ -33,7 +33,7 @@ export default class appBar extends React.Component {
                     title="The Panda" 
                     style={styles}
                     onLeftIconButtonClick={this.toggleAppDrawer}
-                    iconElementRight={<IconButton><LightbulbIcon /></IconButton>}
+                    iconElementRight={<IconButton title="Change Theme"><LightbulbIcon /></IconButton>}
                     onRightIconButtonClick={this.props.changeThemeCallback}
                 />
             <Drawer
