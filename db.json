@@ -131,10 +131,10 @@
          ]
       },
       "Biology":{  
-         "Size":"Giant pandas stand between 2 and 3 feet (60 to 90 centimetres) tall at the shoulder (on all four legs), and reach 4 to 6 feet (1.2 to 1.8 meters) long. Males are larger than females, weighing up to 250 pounds (113 kilograms) in the wild. Females rarely reach 220 pounds (104 kilograms).",
+         "Size":"Giant pandas stand between 2 and 3 feet (60 to 90 centimetres) tall at the shoulder (on all four legs), and reach 4 to 6 feet (1.2 to 1.8 meters) long. Males are larger than females, weighing up to 250 pounds (113 kilograms) in the wild. Females rarely reach 220 pounds (104 kilograms). Newborn pandas are about 1/900th of the size of their mothers—about the size of a stick of butter.",
          "Characteristics":"The low nutrient value of bamboo figures prominently in the biology of the giant panda. They have extremely powerful jaws and associated muscles to crunch through the woody stems of bamboo. Each hand bears a specialized metacarpal bone in the wrist that functions as a thumb would in humans, to allow them to grasp the circular bamboo stalks. Their hair is very dense, conserving their body heat in their cold habitats. Their iconic coloration remains a mystery to scientists but may aid with camouflage.",
          "Breathing":"Pandas breathe using their lungs, just like humans.",
-         "Lifespan":"Scientists are not sure how long giant pandas live in the wild, but they are sure it is shorter than life spans in zoos. Chinese scientists have reported zoo pandas as old as 35. The Smithsonian National Zoo's Hsing-Hsing died at age 28 in 1999.",
+         "Lifespan":"Scientists are not sure how long giant pandas live in the wild, but they are sure it is shorter than life spans in zoos with an average a lifespan of 14-20 years. Chinese scientists have reported zoo pandas as old as 35. The Smithsonian National Zoo's Hsing-Hsing died at age 28 in 1999.",
          "Other":[  
             {  
                "id":1,
@@ -152,3 +152,4 @@
       }
    }
 }
+
