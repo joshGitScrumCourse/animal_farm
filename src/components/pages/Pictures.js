@@ -34,7 +34,7 @@ class Pictures extends Component {
       return (
         <div className="App">
         <PageStructure
-          title='The Panda Photos'
+          title='Panda Photos'
           content={content}/>
       </div>
       );
