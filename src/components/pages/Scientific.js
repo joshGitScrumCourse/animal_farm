@@ -88,7 +88,7 @@ class MatingReproduction extends Component {
               </div>
           );
       }else if(!this.state.loading && !this.state.scienceInfo){
-          scienceContent = <SadPanda text="Uh Oh! Panda doesn't have a mate (Can't Get Mating Information)" />;
+          scienceContent = <SadPanda text="Uh Oh! The Panda has become extinct :'(  (Can't Get Scientific Information)" />;
       }
       return (
         <div className="App">
