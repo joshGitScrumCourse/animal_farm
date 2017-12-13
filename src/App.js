@@ -5,6 +5,7 @@ import NotFound from './components/pages/NotFound';
 import DietInformation from './components/pages/DietInformation';
 import MatingReproduction from './components/pages/MatingReproduction';
 import HabitatInformation from './components/pages/HabitatInformation';
+import BiologyInformation from './components/pages/BiologyInformation';
 import Scientific from './components/pages/Scientific';
 import AnimalBehaviour from './components/pages/AnimalBehaviour';
 
@@ -56,6 +57,7 @@ class App extends Component {
             <Route exact path='/dietinfo' component={DietInformation} />
             <Route exact path='/mating' component={MatingReproduction} />
             <Route exact path='/habitat' component={HabitatInformation} />
+            <Route exact path='/biology' component={BiologyInformation} />
             <Route exact path='/scientific' component={Scientific} />
             <Route exact path='/behaviour' component={AnimalBehaviour} />AnimalBehaviour
             

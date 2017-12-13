@@ -15,11 +15,11 @@ import {
     TableRowColumn,
 } from 'material-ui/Table';
 
-class HabitatInformation extends Component {
+class BiologyInformation extends Component {
     constructor(props){
         super(props);
         this.state = {
-            habitatInfo:null,
+            biologyInfo:null,
             loading: true
         }
     }
@@ -29,16 +29,16 @@ class HabitatInformation extends Component {
             .then(results => {
                 return results.json();
             }).then(data => {
-            this.setState({habitatInfo:data.Habitat, loading:false});
+            this.setState({biologyInfo:data.Biology, loading:false});
         }).catch( err => {console.log(err); this.setState({loading:false})});
     }
 
     render() {
-        const habitatInfo = this.state.habitatInfo;
-        let habitatContent = <LoadingAnimation />;
+        const biologyInfo = this.state.biologyInfo;
+        let biologyContent = <LoadingAnimation />;
 
-        if(!this.state.loading && habitatInfo) {
-            habitatContent = (
+        if(!this.state.loading && biologyInfo) {
+            biologyContent = (
                 <div style={{display:"flex", justifyContent: "center", alignItems:"center", flexDirection:"column"}}>
                     <Table style={{marginTop: '1em', width: "75vw", marginBottom: "1em"}} selectable={false}>
                         <TableBody displayRowCheckbox={false}>
@@ -46,48 +46,58 @@ class HabitatInformation extends Component {
                                 <TableRowColumn style={{
                                     whiteSpace: 'normal',
                                     wordWrap: 'break-word'
-                                }}>Where on earth is the animal found?</TableRowColumn>
+                                }}>Size</TableRowColumn>
                                 <TableRowColumn style={{
                                     whiteSpace: 'normal',
                                     wordWrap: 'break-word'
-                                }}>{habitatInfo.Where}</TableRowColumn>
+                                }}>{biologyInfo.Size}</TableRowColumn>
                             </TableRow>
                             <TableRow>
                                 <TableRowColumn style={{
                                     whiteSpace: 'normal',
                                     wordWrap: 'break-word'
-                                }}>What natural surroundings does the animal need to thrive?</TableRowColumn>
+                                }}>Characteristics</TableRowColumn>
                                 <TableRowColumn style={{
                                     whiteSpace: 'normal',
                                     wordWrap: 'break-word'
-                                }}>{habitatInfo.Surroundings}</TableRowColumn>
+                                }}>{biologyInfo.Characteristics}</TableRowColumn>
                             </TableRow>
                             <TableRow>
                                 <TableRowColumn style={{
                                     whiteSpace: 'normal',
                                     wordWrap: 'break-word'
-                                }}>Where does this animal make its home?</TableRowColumn>
+                                }}>Breathing</TableRowColumn>
                                 <TableRowColumn style={{
                                     whiteSpace: 'normal',
                                     wordWrap: 'break-word'
-                                }}>{habitatInfo.Nesting}</TableRowColumn>
+                                }}>{biologyInfo.Breathing}</TableRowColumn>
+                            </TableRow>
+                            <TableRow>
+                                <TableRowColumn style={{
+                                    whiteSpace: 'normal',
+                                    wordWrap: 'break-word'
+                                }}>Lifespan</TableRowColumn>
+                                <TableRowColumn style={{
+                                    whiteSpace: 'normal',
+                                    wordWrap: 'break-word'
+                                }}>{biologyInfo.Lifespan}</TableRowColumn>
                             </TableRow>
                         </TableBody>
                     </Table>
-                    <Trivia title={"Trivia"} items={habitatInfo.Other}/>
+                    <Trivia title={"Trivia"} items={biologyInfo.Other}/>
                 </div>
             );
-        }else if(!this.state.loading && !habitatInfo){
-            habitatContent = <SadPanda text="Uh Oh! Panda doesn't have a home (Can't Get Habitat Information)" />;
+        }else if(!this.state.loading && !this.state.biologyInfo){
+            biologyContent = <SadPanda text="Uh Oh! Panda doesn't have a physical or chemical structure  (Can't Get Anatomy and Biology Information)" />;
         }
         return (
             <div className="App">
                 <PageStructure
-                    title='Animal Habitat Information'
-                    content={habitatContent}/>
+                    title='Anatomy and Biology'
+                    content={biologyContent}/>
             </div>
         );
     }
 }
-export default HabitatInformation;
+export default BiologyInformation;
 

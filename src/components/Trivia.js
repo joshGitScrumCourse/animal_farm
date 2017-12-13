@@ -11,8 +11,7 @@ class Trivia extends Component {
     mapTriviaCards({id, trivia}){
         return(
             <GridTile key={id}>
-              <Card containerStyle={{whiteSpace:"normal",
-                  display:"inline-block", width:"30vh", backgroundColor:grey200}}>
+              <Card containerStyle={{whiteSpace:"normal", maxHeight:'30vh', backgroundColor:grey200}}>
               <CardText color="black">
                   {trivia}
               </CardText>
